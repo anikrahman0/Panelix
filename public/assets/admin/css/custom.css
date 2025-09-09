@@ -543,7 +543,7 @@ i.fa-trash {
 input.form-control.post-wrapper.dbcategory {
     padding: 5px 10px;
 }
-.search-list-btn{padding:4px 10px;background:#81ba00;color:#fff;font-weight:600;z-index:1;border-radius: 0 5px 5px 0 !important;}
+.search-list-btn{padding:4px 10px;background:#7bb34f;color:#fff;font-weight:600;z-index:1;border-radius: 0 5px 5px 0 !important;}
 .search-list-btn:hover{color:#fff;}
 .reset-btn{background:#FDCE4B;padding:10px 12px;font-weight:600;color:#333;margin-left: 5px;}
 .reset-wrap{text-align:center;}

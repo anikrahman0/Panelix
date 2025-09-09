@@ -105,61 +105,7 @@
                                             </x-form-fields.advanced.dropify>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <x-form-fields.advanced.dropify
-                                                inputName="banner_image_first" 
-                                                inputID="banner_image_first"
-                                                inputValidationID="banner_image_first"
-                                                inputClass="banner-image-top"
-                                                inputValue="{{ !empty($setting->banner_image_first) ? $cdn_url.'/'.$setting->banner_image_first : '' }}" 
-                                                inputRequired="" 
-                                                labelText="" 
-                                                height="80" 
-                                                maxSize="2M" 
-                                                extentions="jpeg jpg png gif webp svg" 
-                                                accepts=".jpg, .jpeg, .gif, .png, .webp, .svg" 
-                                                multiple="false" >
-                                                <label for="banner_image_first" class="form-label pt-2">Banner Image (First) <span>(570 x 169)</span></label>
-                                            </x-form-fields.advanced.dropify>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <x-form-fields.advanced.dropify
-                                                inputName="banner_image_second" 
-                                                inputID="banner_image_second"
-                                                inputValidationID="banner_image_second"
-                                                inputClass="banner-image-bottom"
-                                                inputValue="{{ !empty($setting->banner_image_second) ? $cdn_url.'/'.$setting->banner_image_second : '' }}" 
-                                                inputRequired="" 
-                                                labelText="" 
-                                                height="80" 
-                                                maxSize="2M" 
-                                                extentions="jpeg jpg png gif webp svg" 
-                                                accepts=".jpg, .jpeg, .gif, .png, .webp, .svg" 
-                                                multiple="false" >
-                                                <label for="banner_image_second" class="form-label pt-2">Banner Image (Second) <span>(570 x 169)</span></label>
-                                            </x-form-fields.advanced.dropify>
-                                        </div>
-                                    </div>
-                                    {{-- <div class="row">
-                                        <div class="col-sm-12">
-                                            <x-form-fields.advanced.dropify
-                                                inputName="banner_image_bottom" 
-                                                inputID="banner_image_bottom"
-                                                inputValidationID="banner_image_bottom"
-                                                inputClass="banner-image-bottom"
-                                                inputValue="{{ !empty($setting->banner_image_bottom) ? $cdn_url.'/'.$setting->banner_image_bottom : '' }}" 
-                                                inputRequired="" 
-                                                labelText="" 
-                                                height="80" 
-                                                maxSize="2M" 
-                                                extentions="jpeg jpg png gif webp svg" 
-                                                accepts=".jpg, .jpeg, .gif, .png, .webp, .svg" 
-                                                multiple="false" >
-                                                <label for="banner_image_bottom" class="form-label pt-2">Banner Image (Bottom) <span>(1438 x 265)</span></label>
-                                            </x-form-fields.advanced.dropify>
-                                        </div>
-                                    </div> --}}
+
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <x-form-fields.advanced.text-common
@@ -240,27 +186,6 @@
                                                 <label for="default_phone" class="form-label">Default Phone</label>
                                             </x-form-fields.advanced.text-common>
 
-                                            {{-- <x-form-fields.advanced.select2-single
-                                                inputName="timezone"
-                                                inputClass="form-control timezone"
-                                                inputValidationID="timezone"
-                                                hideValue=""
-                                                inputValue="{{ old('timezone') ?? $setting->timezone }}" 
-                                                inputRequired="" 
-                                                :options="$timeZones" 
-                                                optionValueKey="id" 
-                                                optionLabelKey="title" 
-                                                hasChildren="false"
-                                                childname=""
-                                                childValueKey=""
-                                                childLabelKey=""
-                                                getAjaxData=""
-                                                ajaxRouteName=""
-                                                ajaxInputLength=""
-                                                labelText="Timezone">
-                                                <label for="timezone" class="form-label">Timezone</label>
-                                            </x-form-fields.advanced.select2-single> --}}
-
                                             <x-form-fields.advanced.ckeditor
                                                 inputName="site_description" 
                                                 inputValidationID="site_description"
@@ -283,101 +208,6 @@
                                                 <label for="notice" class="form-label">Notice</label>
                                             </x-form-fields.ckeditor>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-sm-6">
-                                            <x-form-fields.advanced.number 
-                                                inputName="shipping_inside_dhaka" 
-                                                inputValidationID="shipping_inside_dhaka"
-                                                inputClass="form-control shipping_inside_dhaka"
-                                                inputValue="{{ old('shipping_inside_dhaka') ?? $setting->shipping_inside_dhaka }}" 
-                                                inputRequired="" 
-                                                labelText="Shipping Inside Dhaka" 
-                                                minimumValue="0" 
-                                                maximumValue="" 
-                                                steps="1">
-                                                <label for="shipping_inside_dhaka" class="form-label">Shipping Charge (Inside Dhaka)</label>
-                                            </x-form-fields.advanced.number>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                            <x-form-fields.advanced.number 
-                                                inputName="shipping_outside_dhaka" 
-                                                inputValidationID="shipping_outside_dhaka"
-                                                inputClass="form-control shipping_outside_dhaka"
-                                                inputValue="{{ old('shipping_outside_dhaka') ?? $setting->shipping_outside_dhaka }}" 
-                                                inputRequired="" 
-                                                labelText="Shipping Outside Dhaka" 
-                                                minimumValue="0" 
-                                                maximumValue="" 
-                                                steps="1">
-                                                <label for="shipping_outside_dhaka" class="form-label">Shipping Charge (Outside Dhaka)</label>
-                                            </x-form-fields.advanced.number>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        {{-- <div class="form-group col-sm-6">
-                                            <label for="default_currency" class="form-label required">Default Currency <span class="text-danger">*</span></label>
-                                            <div class="d-flex align-items-center mt-3">
-                                                <div class="form-check-inline">
-                                                    <x-form-fields.advanced.radio-checkbox 
-                                                        inputClass="form-check-input me-3 currency1" 
-                                                        inputValidationID="currency1"
-                                                        isChecked="{{ old('default_currency', $setting->default_currency) == 1 ? 'checked' : '' }}" 
-                                                        inputType="radio" 
-                                                        inputName="default_currency" 
-                                                        inputValue="1" 
-                                                        inputRequired="" 
-                                                        labelText="USD">
-                                                        <label for="currency1" class="">USD</label>
-                                                    </x-form-fields.advanced.radio-checkbox>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <x-form-fields.advanced.radio-checkbox 
-                                                        inputClass="form-check-input me-3 currency2" 
-                                                        inputValidationID="currency2"
-                                                        isChecked="{{ old('default_currency', $setting->default_currency) == 2 ? 'checked' : '' }}" 
-                                                        inputType="radio" 
-                                                        inputName="default_currency" 
-                                                        inputValue="2" 
-                                                        inputRequired="" 
-                                                        labelText="BDT">
-                                                        <label for="currency2" class="">BDT</label>
-                                                    </x-form-fields.advanced.radio-checkbox>
-                                                </div>
-                                            </div>
-                                        </div> --}}
-                                        {{-- <div class="form-group col-sm-12">
-                                            <label for="status" class="form-label required">Status <span class="text-danger">*</span></label>
-                                            <div class="d-flex align-items-center mt-3">
-                                                <div class="form-check-inline">
-                                                    <x-form-fields.advanced.radio-checkbox 
-                                                        inputClass="form-check-input me-3 status1" 
-                                                        inputValidationID="status1"
-                                                        isChecked="{{ old('status', $setting->status) == 1 ? 'checked' : '' }}" 
-                                                        inputType="radio" 
-                                                        inputName="status" 
-                                                        inputValue="1" 
-                                                        inputRequired="" 
-                                                        labelText="Active">
-                                                        <label for="status1" class="">Active</label>
-                                                    </x-form-fields.advanced.radio-checkbox>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <x-form-fields.advanced.radio-checkbox 
-                                                        inputClass="form-check-input me-3 status2" 
-                                                        inputValidationID="status2"
-                                                        isChecked="{{ old('status', $setting->status) == 2 ? 'checked' : '' }}" 
-                                                        inputType="radio" 
-                                                        inputName="status" 
-                                                        inputValue="2" 
-                                                        inputRequired="" 
-                                                        labelText="Inactive">
-                                                        <label for="status2" class="">Inactive</label>
-                                                    </x-form-fields.advanced.radio-checkbox>
-                                                </div>
-                                            </div>
-                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

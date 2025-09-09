@@ -31,28 +31,13 @@
                 </li>
                 <li class="onhover-dropdown">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-                    <span class="badge badge-pill badge-notify pull-right notification-badge">{{adminUser()->unreadNotifications()->count()}}</span>
+                    <span class="badge badge-pill badge-notify pull-right notification-badge">0</span>
                     <span class="dot"></span>
                     <ul class="notification-dropdown onhover-show-div p-0">
-                        <li>Notification <span class="badge badge-pill badge-primary pull-right">{{adminUser()->unreadNotifications()->count()}}</span></li>
-                        @forelse(adminUser()->unreadNotifications as $notification)
-                            <li>
-                                <a href="{{ route('admin.notifications.read', $notification->id) }}" class="">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <h6 class="mt-0">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag shopping-color"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                                                </span>{{ $notification->data['title'] ?? 'Notification' }}
-                                            </h6>
-                                            <p class="mb-0">{{ $notification->data['message'] ?? '' }}</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        @empty
-                            <li class="txt-dark"><a href="javascript:void(0)">No Notification</li>
-                        @endforelse
+                        <li>Notification <span class="badge badge-pill badge-primary pull-right">0</span></li>
+
+                        <li class="txt-dark"><a href="javascript:void(0)">No Notification</li>
+                        
                     </ul>
                 </li>
                 <li>

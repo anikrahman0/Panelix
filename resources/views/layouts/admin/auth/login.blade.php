@@ -13,9 +13,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{asset('assets/admin/common/logo.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('assets/admin/common/logo.png')}}" type="image/x-icon">
-    <title>Jhingephul - Admin Login</title>
+    <link rel="icon" href="{{asset('assets/admin/common/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('assets/admin/common/favicon.png')}}" type="image/x-icon">
+    <title>Panelix - Admin Login</title>
 
     <!-- Google font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap">
@@ -127,19 +127,19 @@
                             <div class="single-item">
                                 <div>
                                     <div>
-                                        <h3>Welcome to Jhingephul</h3>
-                                        <p>Welcome to Jhingephul Admin. Please log in to manage your deals and settings.</p>
+                                        <h3>Welcome to Panelix</h3>
+                                        <p>Welcome to Panelix Admin. Please log in to manage your deals and settings.</p>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                        <h3>Welcome to Jhingephul</h3>
+                                        <h3>Welcome to Panelix</h3>
                                         <p>Access powerful tools to streamline your operations.</p>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                        <h3>Welcome to Jhingephul</h3>
+                                        <h3>Welcome to Panelix</h3>
                                         <p>Get real-time insights and analytics to drive your business forward.</p>
                                     </div>
                                 </div>

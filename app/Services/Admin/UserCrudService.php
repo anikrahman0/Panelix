@@ -83,10 +83,7 @@ class UserCrudService
         if (!empty($image)) {
             $imagename = CommonFunctions::imageUpload($image, 'media/uploads/users');
             $validated['image_path'] = $imagename;
-        } else {
-            $validated['image_path'] = CommonFunctions::generateImage($request->name);
         }
-
         $validated['password'] = Hash::make($validated['password']);
 
         unset($validated['user_type'], $validated['password_confirmation']);
@@ -106,10 +103,7 @@ class UserCrudService
         if (!empty($image)) {
             $imagename = CommonFunctions::imageUpload($image, 'media/uploads/users');
             $validated['image_path'] = $imagename;
-        } else {
-            $validated['image_path'] = CommonFunctions::generateImage($request->name);
         }
-
         $validated['password'] = Hash::make($validated['password']);
         $validated['email_verified_at'] = Carbon::now();
 

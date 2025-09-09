@@ -32,18 +32,7 @@ class GeneralSettingValidationRequest extends FormRequest
             'logo' => 'nullable|image|mimes:jpg,jpeg,png,gif,webp,svg|max:2048',
             'fb_logo' => 'nullable|image|mimes:jpg,jpeg,png,gif,webp,svg|max:2048',
             'favicon' => 'nullable|mimes:jpg,jpeg,png,gif,webp,svg,ico|max:2048',
-            'banner_image_first' => 'nullable|image|mimes:jpg,jpeg,png,gif,webp,svg|max:2048',
-            'banner_image_second' => 'nullable|image|mimes:jpg,jpeg,png,gif,webp,svg|max:2048',
-            
-            // 'logo_remove' => 'nullable',
-            // 'fb_logo_remove' => 'nullable',
-            // 'favicon_remove' => 'nullable',
-            // 'banner_image_first_remove' => 'nullable',
-            // 'banner_image_second_remove' => 'nullable',
-            // 'banner_image_bottom' => 'nullable|image|mimes:jpg,jpeg,png,gif,webp,svg|max:2048',
-            // 'default_currency' => 'required|integer',
             'notice' => 'nullable|string|max:10000',
-            // 'status' => 'required|integer',
         ];
     }
 }

@@ -25,7 +25,7 @@
     <div id="success-msg"></div>
     {{-- @include('layouts.frontend.partials.navbar') --}}
     <!-- Back to top button -->
-    <a id="button"><i class="fa-solid fa-arrow-turn-up"></i></a>
+    {{-- <a id="button"><i class="fa-solid fa-arrow-turn-up"></i></a> --}}
 
     <main>
         @yield('content')

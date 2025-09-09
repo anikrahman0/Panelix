@@ -85,15 +85,15 @@ return [
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
     
     'currency_symbol' => env('CURRENCY_SYMBOL', '$'),
-    'logo_full_path'=> 'https://www.emythmaker.com/project/Template/E-Commerce/jhingephul/Demo03/media/common/logo.png',
+    'logo_full_path'=> '',
 
     'default_site_title' => env('APP_NAME', ''),
     'default_site_url' => env('APP_URL', ''),
     'default_site_description' => env('DEFAULT_SITE_DESCRIPTION', ''),
     'default_phone' => env('DEFAULT_PHONE', ''),
-    'default_email' => env('DEFAULT_EMAIL', 'info@jhingephul.com'),
+    'default_email' => env('DEFAULT_EMAIL', ''),
     'default_address' => env('DEFAULT_ADDRESS', ''),
-    'default_copyright' => env('DEFAULT_COPYRIGHT', 'ঝিঙেফুল পাবলিকেশন. কর্তৃক সর্বসত্ব ® সংরক্ষিত'),
+    'default_copyright' => env('DEFAULT_COPYRIGHT', 'All rights reserved by Panelix'),
     'default_notice' => env('DEFAULT_NOTICE', ''),
     'default_logo' => env('DEFAULT_LOGO', 'assets/frontend/media/common/logo.png'),
     'default_favicon' => env('DEFAULT_FAVICON', 'assets/frontend/media/common/logo.png'),

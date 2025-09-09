@@ -194,7 +194,7 @@ return [
     */
 
     'attributes' => [
-        'g-recaptcha-response'=>'Recaptcha',
+        // Add more attributes as needed
     ],
 
 ];

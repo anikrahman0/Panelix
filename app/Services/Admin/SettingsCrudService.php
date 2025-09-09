@@ -25,9 +25,6 @@ class SettingsCrudService
                 'logo'                => '',
                 'fb_logo'             => '',
                 'favicon'             => '',
-                'banner_image_first'    => '',
-                'banner_image_second' => '',
-                'banner_image_bottom' => '',
                 'notice'              => '',
                 'status'              => 1,
             ]);
@@ -54,9 +51,6 @@ class SettingsCrudService
                 'logo'                => '',
                 'fb_logo'             => '',
                 'favicon'             => '',
-                'banner_image_first'    => '',
-                'banner_image_second' => '',
-                'banner_image_bottom' => '',
                 'notice'              => '',
                 'status'              => 1,
             ]);
@@ -66,9 +60,6 @@ class SettingsCrudService
             'logo',
             'fb_logo',
             'favicon',
-            'banner_image_first',
-            'banner_image_second',
-            'banner_image_bottom'
         ];
 
         // Handle removals and uploads

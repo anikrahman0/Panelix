@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 
 function fEn2Bn($BDDate)
@@ -15,9 +14,4 @@ function fEn2Bn($BDDate)
 function adminUser()
 {
     return Auth::guard('admin')->user();
-}
-
-function pendingOrderCount()
-{
-    return Order::where('order_status', 1)->count();
 }

@@ -4,9 +4,9 @@
 <head>
     @include('layouts.admin.partials.meta')
     @if(request()->routeIs('admin.dashboard'))
-        <title>Jhingephul - Admin</title>
+        <title>Panelix - Admin</title>
     @else
-        <title>Jhingephul - @yield('title')</title>
+        <title>Panelix - @yield('title')</title>
     @endif
     @include('layouts.admin.partials.styles')
     @stack('css')

@@ -26,11 +26,6 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->string('fb_logo')->nullable();
             $table->string('favicon')->nullable();
-            $table->string('banner_image_first')->nullable();
-            $table->string('banner_image_second')->nullable();
-            $table->string('banner_image_bottom')->nullable();
-            $table->decimal('shipping_inside_dhaka', 8, 2)->default(50);
-            $table->decimal('shipping_outside_dhaka', 8, 2)->default(70);
             $table->unsignedTinyInteger('default_currency')->default(1)->comment('1-USD, 2-BDT');
             $table->text('notice')->nullable();
             $table->unsignedTinyInteger('status')->default(1)->comment('1-Active, 2-Inactive');

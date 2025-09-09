@@ -6,12 +6,6 @@
     
 @endpush
 
-
-@push('meta')
-    @include('layouts.frontend.partials.meta.common-meta')
-@endpush
-
-
 @section('content')
 <!-- Logo -->
     <img src="{{ asset('assets/frontend/media/common/logo.png') }}" alt="Panelix Logo" class="logo">
@@ -20,7 +14,7 @@
     <h1>Panelix 1.0</h1>
 
     <!-- Admin Panel Link -->
-    <a href="{{ route('admin.login') }}" class="btn-admin">Go to Admin Panel</a>
+    <a href="{{ route('admin.loginpage') }}" class="btn-admin">Go to Admin Panel</a>
 
     <!-- Footer -->
     <footer>
