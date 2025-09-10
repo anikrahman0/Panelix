@@ -6,6 +6,7 @@ use App\Models\GeneralSetting;
 use App\Constants\CacheLifetime;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -28,12 +29,14 @@ class AppServiceProvider extends ServiceProvider
         }
         Paginator::useBootstrap();
         $cdn_url = config('imagepath.cdn_url');
-        $settings = cache()->remember('general_settings', CacheLifetime::ONE_DAY, function () {
-            return GeneralSetting::where('status', 1)->first();
-        });
-        view()->share([
-            'cdn_url' => $cdn_url,
-            'settings' => $settings,
-        ]);
+        if(Schema::hasTable('general_settings')) {
+            $settings = cache()->remember('general_settings', CacheLifetime::ONE_DAY, function () {
+                return GeneralSetting::where('status', 1)->first();
+            });
+            view()->share([
+                'cdn_url' => $cdn_url,
+                'settings' => $settings,
+            ]);
+        }
     }
 }
