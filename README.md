@@ -1,7 +1,3 @@
-Here's your **properly formatted and cleaned-up Markdown file** for the **Panelix Installer & Dashboard** documentation. I’ve fixed indentation, syntax, headers, lists, code blocks, typos (like the double `.com.com`), and ensured consistent structure and readability.
-
----
-
 # Panelix Installer & Dashboard
 
 Panelix is a modern **Laravel 12 Admin Dashboard**. This package provides a simple **installer** to create a new Panelix project on your local machine with minimal setup.
