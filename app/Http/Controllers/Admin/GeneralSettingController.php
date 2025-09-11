@@ -2,10 +2,6 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\User;
-use Illuminate\Http\Request;
-use App\Models\GeneralSetting;
-use App\Library\CommonFunctions;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\GeneralSettingValidationRequest;
 use App\Services\Admin\SettingsCrudService;
