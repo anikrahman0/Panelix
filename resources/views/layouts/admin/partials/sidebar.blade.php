@@ -3,7 +3,7 @@
         <div class="logo-wrapper">
             <a href="{{ route('admin.dashboard') }}" class="d-flex align-items-center gap-2">
                 <img class="d-none d-lg-block blur-up lazyloaded img-fluid"
-                    src="{{ asset('assets/admin/common/logo.png') }}" width="50" alt="logo">
+                    src="{{ asset('assets/admin/common/logo-light.png') }}" width="50" alt="logo">
                 <h3 class="text-light mb-0">Panelix</h3>
             </a>
         </div>

@@ -11,7 +11,7 @@
                         <img src="{{ asset('assets/admin/common/logo.png') }}" alt="Panelix Logo" class="logo" width="300">
                     </div>
                 </div>    
-                <h4 class="mt-4">Panelix 1.0</h4>                                
+                <h5 class="fw-bold">Panelix 1.0</h5>                                
             </div>
         </div>
     </div>

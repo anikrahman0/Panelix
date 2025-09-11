@@ -8,10 +8,10 @@
 
 @section('content')
 <!-- Logo -->
-    <img src="{{ asset('assets/frontend/media/common/logo.png') }}" alt="Panelix Logo" class="logo">
+    <img src="{{ asset('assets/frontend/media/common/logo-old.png') }}" alt="Panelix Logo" class="logo">
 
     <!-- Title -->
-    <h1>Panelix 1.0</h1>
+    <p class="mt-4 mb-5 fw-bold fs-18">Panelix 1.0</p>
 
     <!-- Admin Panel Link -->
     <a href="{{ route('admin.loginpage') }}" class="btn-admin">Go to Admin Panel</a>
