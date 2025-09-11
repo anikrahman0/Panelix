@@ -185,14 +185,8 @@ php artisan serve
 **Developer**: Md. Anik Rahman  
 **Email**: [a7604366@gmail.com](mailto:a7604366@gmail.com)
 
-> ✅ Fixed typo: Removed duplicate `.com.com`
-
 ---
 
 ## License
 
-*To be added by maintainer.*
-
----
-
-✅ This version is clean, properly structured, and ready for public documentation or README use. Let me know if you’d like to add screenshots, badges, or contribution guidelines!
+MIT
