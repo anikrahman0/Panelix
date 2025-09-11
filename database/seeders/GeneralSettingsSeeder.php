@@ -13,6 +13,7 @@ class GeneralSettingsSeeder extends Seeder
      */
     public function run(): void
     {
+        GeneralSetting::truncate();
         GeneralSetting::create([
             'site_title'          => 'Panelix',
             'site_url'            => '',
