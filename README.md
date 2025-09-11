@@ -40,16 +40,16 @@ Install the installer globally using Composer:
 composer global require panelix/installer
 ```
 
-Make sure your global Composer vendor/bin directory is in your system PATH:
+-Make sure your global Composer vendor/bin directory is in your system PATH:
 
-Windows: C:\Users\<YourUser>\AppData\Roaming\Composer\vendor\bin
+    Windows: C:\Users\<YourUser>\AppData\Roaming\Composer\vendor\bin
 
-Linux/macOS: ~/.composer/vendor/bin or ~/.config/composer/vendor/bin
+    Linux/macOS: ~/.composer/vendor/bin or ~/.config/composer/vendor/bin
 
 
-Create a New Panelix Project
+#Create a New Panelix Project
 
-Once installed, you can create a new Panelix project with:
+    Once installed, you can create a new Panelix project with:
 
 Create a New Panelix Project
 
