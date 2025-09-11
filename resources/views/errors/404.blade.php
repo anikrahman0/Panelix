@@ -6,9 +6,9 @@
     <div class="error-page bg-404">
         <div>
             <h1 class="error-code">404</h1>
-            <h2 class="error-title">পৃষ্ঠাটি পাওয়া যায়নি</h2>
-            <p class="error-message">দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি।</p>
-            <a href="{{ url('/') }}" class="btn btn-primary-custom btn-lg">হোমে ফিরে যান</a>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message mt-4 mb-5">Sorry, The requested page could not be found।</p>
+            <a href="{{ url('/') }}" class="btn btn-primary btn-dark btn-lg">Go to Home</a>
         </div>
     </div>
 @endsection

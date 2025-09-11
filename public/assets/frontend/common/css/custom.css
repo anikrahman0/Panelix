@@ -43,3 +43,9 @@ footer {
 .fs-18{
     font-size: 18px;
 }
+.error-code{
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}

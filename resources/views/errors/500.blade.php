@@ -12,13 +12,11 @@
             <h1 class="error-code"><i class="fas fa-cogs fa-lg"></i> 500</h1>
 
             <!-- Title -->
-            <h2 class="error-title">সার্ভার ত্রুটি</h2>
+            <h2 class="error-title">Server Error</h2>
 
             <!-- Message -->
-            <p class="error-message">দুঃখিত, আমাদের সাইটে কিছু সমস্যা হয়েছে। অনুগ্রহ করে কিছুক্ষণ পর আবার চেষ্টা করুন।</p>
+            <p class="error-message">Sorry, there was a problem with our site. Please try again after some time.</p>
 
-            <!-- Button -->
-            <a href="{{ url('/') }}" class="btn btn-primary-custom btn-lg">হোমে ফিরে যান</a>
         </div>
     </div>
 @endsection

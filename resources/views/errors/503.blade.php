@@ -12,10 +12,10 @@
             <h1 class="error-code"><i class="fas fa-tools fa-lg"></i> 503</h1>
 
             <!-- Title -->
-            <h2 class="error-title">সার্ভিস সাময়িকভাবে বন্ধ</h2>
+            <h2 class="error-title">Service Temporarily Unavailable</h2>
 
             <!-- Message -->
-            <p class="error-message">দুঃখিত, সার্ভিস সাময়িকভাবে বন্ধ আছে। অনুগ্রহ করে কিছুক্ষণ পর পুনরায় চেষ্টা করুন।।</p>
+            <p class="error-message">Sorry, the service is temporarily unavailable. Please try again after some time.</p>
 
         </div>
     </div>
