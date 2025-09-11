@@ -11,8 +11,8 @@
 
 @stack('meta')
 
-<link type="image/x-icon" rel="shortcut icon" href="{{ $cdn_url.'/'.$settings->favicon ?? config('app.default_favicon') }}">
-<link type="image/x-icon" rel="icon" href="{{ $cdn_url.'/'.$settings->favicon ?? config('app.default_favicon') }}">
+<link type="image/x-icon" rel="shortcut icon" href="{{ $cdn_url.'/'.($settings->favicon ?? config('app.default_favicon')) }}">
+<link type="image/x-icon" rel="icon" href="{{ $cdn_url.'/'.($settings->favicon ?? config('app.default_favicon')) }}">
 
 @include('layouts.frontend.partials.css.styles')
 

@@ -13,8 +13,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{asset('assets/admin/common/favicon.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('assets/admin/common/favicon.png')}}" type="image/x-icon">
+    <link type="image/x-icon" rel="shortcut icon" href="{{ $cdn_url.'/'.($settings->favicon ?? config('app.default_favicon')) }}">
+    <link type="image/x-icon" rel="icon" href="{{ $cdn_url.'/'.($settings->favicon ?? config('app.default_favicon')) }}">
+
+    
     <title>Panelix - Admin Login</title>
 
     <!-- Google font-->
@@ -93,7 +95,7 @@
                                         <form class="form-horizontal auth-form" method="POST" action="{{route('admin.login')}}">
                                             @csrf
                                             <div class="form-group mb-5 mt-5">
-                                                <input required="" value="{{ old('email') }}" name="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" id="email">
+                                                <input required="" value="{{ old('email') ?? 'panelix@rootadmin.com' }}" name="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" id="email">
                                                 @error('email')
                                                     <span class="invalid-feedback ml-2" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -101,7 +103,7 @@
                                                 @enderror
                                             </div>
                                             <div class="form-group mb-5">
-                                                <input required="" name="password" id="password"  type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password">
+                                                <input required="" name="password" id="password"  type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" value="adm@Panelix238">
                                                 @error('password')
                                                     <span class="invalid-feedback ml-2" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -116,7 +118,6 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-dark">Email: <b>panelix@rootadmin.com</b>, Password: <b>adm@Panelix238</b> </p>
                     </div>
                 </div>
             </div>

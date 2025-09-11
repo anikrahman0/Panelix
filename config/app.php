@@ -97,7 +97,7 @@ return [
     'default_copyright' => env('DEFAULT_COPYRIGHT', 'All rights reserved by Panelix'),
     'default_notice' => env('DEFAULT_NOTICE', ''),
     'default_logo' => env('DEFAULT_LOGO', 'assets/frontend/media/common/logo.png'),
-    'default_favicon' => env('DEFAULT_FAVICON', 'assets/frontend/media/common/logo.png'),
+    'default_favicon' => env('DEFAULT_FAVICON', 'assets/frontend/media/common/favicon.png'),
     'default_fb_logo' => env('DEFAULT_FB_LOGO', 'assets/frontend/media/common/logo.png'),
 
     /*

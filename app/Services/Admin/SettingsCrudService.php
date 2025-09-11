@@ -86,7 +86,6 @@ class SettingsCrudService
 
     public static function settingsCacheRemove()
     {
-        CacheHelper::forget('home_banners');
         CacheHelper::forget('general_settings');
     } 
 
