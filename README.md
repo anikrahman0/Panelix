@@ -39,9 +39,3 @@ Install the installer globally using Composer:
 ```bash
 composer global require panelix/installer
 
----
-## Make sure your global Composer vendor/bin directory is in your system PATH:
-
-Windows: C:\Users\<YourUser>\AppData\Roaming\Composer\vendor\bin
-
-Linux/macOS: ~/.composer/vendor/bin or ~/.config/composer/vendor/bin
