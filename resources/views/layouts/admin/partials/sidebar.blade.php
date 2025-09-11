@@ -2,9 +2,16 @@
     <div class="main-header-left d-none d-lg-block">
         <div class="logo-wrapper">
             <a href="{{ route('admin.dashboard') }}" class="d-flex align-items-center gap-2">
-                <img class="d-none d-lg-block blur-up lazyloaded img-fluid"
-                    src="{{ asset('assets/admin/common/logo-light.png') }}" width="50" alt="logo">
-                <h3 class="text-light mb-0">Panelix</h3>
+                @if(!empty($settings->logo))
+                    <img class="d-none d-lg-block blur-up lazyloaded img-fluid" src="{{ $cdn_url . '/' . $settings->logo }}" width="50" alt="logo">
+                @else
+                    <img class="d-none d-lg-block blur-up lazyloaded img-fluid" src="{{ asset('assets/admin/common/logo-light.png') }}" width="50" alt="logo">
+                @endif
+                @if(!empty($settings->site_title))
+                    <h3 class="text-light mb-0">{{ $settings->site_title }}</h3>
+                @else
+                    <h3 class="text-light mb-0">Panelix</h3>
+                @endif
             </a>
         </div>
 

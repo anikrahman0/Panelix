@@ -66,7 +66,7 @@
                             <div>
                                 <div class="d-flex justify-content-center mb-3 mt-3">
                                     @if(!empty($settings->logo))
-                                        <img class="img-fluid" src="{{ $cdn_url . '/' . $settings->logo }}" alt="Site Logo" title="Site Logo">
+                                        <img class="img-fluid" src="{{ $cdn_url . '/' . $settings->logo }}" alt="Site Logo" title="Site Logo" width="200">
                                     @else
                                         <img class="img-fluid" src="{{ $cdn_url . '/' . config('app.default_logo') }}" alt="Site Logo" title="Site Logo" width="200">
                                     @endif
@@ -116,13 +116,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-3">
-                            <p class="text-dark">Email: <b>panelix@rootadmin.com</b>
-                            </p>
-                            <p class="text-dark">
-                                Password: <b>adm@Panelix238</b>
-                            </p>
-                        </div>
+                        <p class="text-dark">Email: <b>panelix@rootadmin.com</b>, Password: <b>adm@Panelix238</b> </p>
                     </div>
                 </div>
             </div>

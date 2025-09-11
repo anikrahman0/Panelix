@@ -38,6 +38,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
+    'version' => '1.0.6',
 
     'debug' => (bool) env('APP_DEBUG', false),
 
@@ -100,7 +101,7 @@ return [
     'default_fb_logo' => env('DEFAULT_FB_LOGO', 'assets/frontend/media/common/logo.png'),
 
     /*
-    |--------------------------------------------------------------------------
+    |---------- ----------------------------------------------------------------
     | Encryption Key
     |--------------------------------------------------------------------------
     |
