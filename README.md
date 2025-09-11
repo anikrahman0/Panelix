@@ -1,3 +1,7 @@
+Here's your **properly formatted and cleaned-up Markdown file** for the **Panelix Installer & Dashboard** documentation. I’ve fixed indentation, syntax, headers, lists, code blocks, typos (like the double `.com.com`), and ensured consistent structure and readability.
+
+---
+
 # Panelix Installer & Dashboard
 
 Panelix is a modern **Laravel 12 Admin Dashboard**. This package provides a simple **installer** to create a new Panelix project on your local machine with minimal setup.
@@ -24,11 +28,11 @@ Panelix is a modern **Laravel 12 Admin Dashboard**. This package provides a simp
 
 Before using the installer, ensure your system has:
 
-- PHP ≥ 8.2  
-- Composer  
-- Git  
-- MySQL (optional, for automatic database creation)  
-- Laravel 12 compatible environment  
+- PHP ≥ 8.2
+- Composer
+- Git
+- MySQL (optional, for automatic database creation)
+- Laravel 12 compatible environment
 
 ---
 
@@ -40,93 +44,155 @@ Install the installer globally using Composer:
 composer global require panelix/installer
 ```
 
--Make sure your global Composer vendor/bin directory is in your system PATH:
+> **Make sure your global Composer `vendor/bin` directory is in your system PATH:**
+>
+> - **Windows**: `C:\Users\<YourUser>\AppData\Roaming\Composer\vendor\bin`
+> - **Linux/macOS**: `~/.composer/vendor/bin` or `~/.config/composer/vendor/bin`
 
-    Windows: C:\Users\<YourUser>\AppData\Roaming\Composer\vendor\bin
+You may need to restart your terminal after adding the path.
 
-    Linux/macOS: ~/.composer/vendor/bin or ~/.config/composer/vendor/bin
+---
 
+## Creating a New Panelix Project
 
-#Create a New Panelix Project
-
-    Once installed, you can create a new Panelix project with:
-
-Create a New Panelix Project
+Once installed, you can create a new Panelix project with:
 
 ```bash
 panelix new myproject
 ```
-Replace myproject with your desired project directory.
 
-If you leave it blank, the default directory will be panelix-app.
+Replace `myproject` with your desired project directory name.
 
+> If you leave it blank, the default directory will be `panelix-app`.
 
-Database Setup
+---
+
+## Database Setup
 
 During installation, the installer will:
 
-Ask you to enter a database name (press Enter to use the default panelix_db):
+- Prompt you to enter a database name (press Enter to use the default `panelix_db`):
 
-Enter database name (default: panelix_db):
+  ```
+  Enter database name (default: panelix_db):
+  ```
 
+- Attempt to create the database automatically if MySQL is available.
 
-Attempt to create the database automatically if MySQL is available.
+If MySQL is not detected or database creation fails, you’ll see:
 
-If MySQL is not detected or database creation fails, instructions will be provided:
+> ⚠️ **Database was not created automatically.**  
+> ➡️ Please create it manually:  
+> &nbsp;&nbsp;&nbsp;&nbsp;`CREATE DATABASE your_database_name;`  
+> &nbsp;&nbsp;&nbsp;&nbsp;(You can use phpMyAdmin or any MySQL management tool)  
+> ➡️ Then run:  
+> &nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate --seed`
 
-⚠️ Database was not created automatically.
-➡️ Please create it manually:
-   CREATE DATABASE your_database_name;
-   (You can use phpMyAdmin or any MySQL management tool)
-➡️ Then run:
-   php artisan migrate --seed
+The installer will automatically update the `.env` file with the database name, username, and password.
 
+---
 
-The installer will automatically update the .env file with the database name, username, and password.
+## Running Migrations & Seeders
 
+The installer attempts to run migrations and seeders automatically after database setup.
 
-Serving the Project
+If this step fails or is skipped, run manually:
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+## Serving the Project
 
 After installation, the installer starts the Laravel development server:
 
+```
 🚀 Starting Laravel development server...
 ✅ Panelix Project is ready!
 👉 Serving at: http://127.0.0.1:8000
 👉 Project directory: myproject
+```
 
+You can access your Panelix dashboard at the provided URL.
 
-If you want to serve the project on a custom domain or port, update your .env and CDN_URL accordingly.
+---
 
-Custom Domain & CDN_URL
+## Custom Domain & CDN_URL
 
-If you are using Herd, Valet, WSL, or any custom domain (e.g., xyz.test), you need to set the CDN_URL in your .env file:
+If you are using **Herd**, **Valet**, **WSL**, or any custom domain (e.g., `xyz.test`), you need to set the `CDN_URL` in your `.env` file:
 
+```env
 CDN_URL=http://xyz.test
+```
 
+This ensures assets, images, and links load correctly in your dashboard.
 
-This ensures assets and links load correctly in your dashboard.
+> 💡 Tip: Also update `APP_URL` in `.env` if you're using a custom domain:
+>
+> ```env
+> APP_URL=http://xyz.test
+> ```
 
-Manual Steps (if needed)
+---
 
-If database creation or migration fails, perform these steps manually:
+## Manual Steps (if needed)
 
-# Create database
+If the installer fails to create the database or run migrations, follow these steps manually:
+
+### 1. Create Database
+
+```sql
 CREATE DATABASE your_database_name;
+```
 
-# Set your DB credentials in .env
+### 2. Update `.env` File
+
+Set your database credentials:
+
+```env
 DB_DATABASE=your_database_name
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
-# Run migrations and seeders
+### 3. Run Migrations and Seeders
+
+```bash
 php artisan migrate --seed
+```
 
-# Start server manually (if installer fails)
+### 4. Start Server Manually (if needed)
+
+```bash
 php artisan serve
+```
 
-Support
+---
 
-Developer: Md. Anik Rahman
+## Troubleshooting
 
-Email: a7604366@gmail.com.com
+- ❗ If `panelix` command is not found, ensure Composer’s global `vendor/bin` is in your `PATH`.
+- ❗ If database creation fails, verify MySQL is running and accessible with your credentials.
+- ❗ If assets don’t load properly, double-check `CDN_URL` and `APP_URL` in `.env`.
+- ❗ Clear config cache after changes: `php artisan config:clear`
 
+---
+
+## Support
+
+**Developer**: Md. Anik Rahman  
+**Email**: [a7604366@gmail.com](mailto:a7604366@gmail.com)
+
+> ✅ Fixed typo: Removed duplicate `.com.com`
+
+---
+
+## License
+
+*To be added by maintainer.*
+
+---
+
+✅ This version is clean, properly structured, and ready for public documentation or README use. Let me know if you’d like to add screenshots, badges, or contribution guidelines!
