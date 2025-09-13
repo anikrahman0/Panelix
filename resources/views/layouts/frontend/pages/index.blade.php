@@ -15,7 +15,7 @@
     @endif
 
     <!-- Title -->
-    <p class="mt-4 mb-5 fw-bold fs-18">{{ !empty($settings->site_title) ? $settings->site_title : (config('app.name') ?? 'Panelix') }} {{config('app.version')}}</p>
+    <p class="mt-4 mb-5 fw-bold fs-18">{{ !empty($settings->site_title) ? $settings->site_title : (config('app.name')) }} {{config('app.version')}}</p>
 
     <!-- Admin Panel Link -->
     <a href="{{ route('admin.loginpage') }}" class="btn-admin">Go to Admin Panel</a>
@@ -25,7 +25,7 @@
         @if(!empty($settings->copyright_text))
             {{ $settings->copyright_text }}
         @else
-            &copy; {{ now()->year }} Panelix. Developed by Anik Rahman.
+            &copy; {{ now()->year }} {{ $settings->site_title ?? config('app.name') }}.{{config('app.developed_by')}}.
         @endif
     </footer>
 @endsection

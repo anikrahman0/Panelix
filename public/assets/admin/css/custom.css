@@ -564,3 +564,8 @@ input.form-control.post-wrapper.dbcategory {
 #sortable .handle {
     cursor: move;
 }
+
+.card-header{
+    margin-bottom: 20px !important;
+    border: 1px soild #ccc !important;  
+}

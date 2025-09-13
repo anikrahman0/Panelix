@@ -77,7 +77,7 @@
 
                                         <td>{{$city->state->name}}</td>
                                         
-                                        <td>{{$city->state->country->country_name}}</td>
+                                        <td>{{$city->state?->country?->country_name}}</td>
 
                                         <td>
                                             {{-- <a href="{{ route('admin.cities.edit', $city->id) }}">

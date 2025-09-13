@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {{-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> --}}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Panelix @unless (Request::routeIs('frontend.index')) - @yield('title') @endunless</title>
+<title> {{ $settings->site_title ?? config('app.name') }} @unless (Request::routeIs('frontend.index')) - @yield('title') @endunless</title>
 
 @stack('meta')
 

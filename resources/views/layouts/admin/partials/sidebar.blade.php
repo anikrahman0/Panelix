@@ -10,7 +10,7 @@
                 @if(!empty($settings->site_title))
                     <h3 class="text-light mb-0">{{ $settings->site_title }}</h3>
                 @else
-                    <h3 class="text-light mb-0">Panelix</h3>
+                    <h3 class="text-light mb-0">{{config('app.name')}}</h3>
                 @endif
             </a>
         </div>

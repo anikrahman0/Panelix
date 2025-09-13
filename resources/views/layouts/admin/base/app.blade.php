@@ -4,9 +4,9 @@
 <head>
     @include('layouts.admin.partials.meta')
     @if(request()->routeIs('admin.dashboard'))
-        <title>Panelix - Admin</title>
+        <title>{{ $settings->site_title ?? config('app.name') }} - Admin</title>
     @else
-        <title>Panelix - @yield('title')</title>
+        <title>{{ $settings->site_title ?? config('app.name') }} - @yield('title')</title>
     @endif
     @include('layouts.admin.partials.styles')
     @stack('css')

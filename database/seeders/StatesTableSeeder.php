@@ -71,207 +71,207 @@ class StatesTableSeeder extends Seeder
             ],
             [
                 'name' => 'Chittagong',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Noakhali',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Feni',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Brahmanbaria',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Comilla',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Chandpur',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Lakshmipur',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Khagrachhari',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Rangamati',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Bandarban',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Cox\'s Bazar',
-                'country_id' => '2',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Bagerhat',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Chuadanga',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Jessore',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Jhenaidah',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Khulna',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Kushtia',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Magura',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Meherpur',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Narail',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Satkhira',
-                'country_id' => '3',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Habiganj',
-                'country_id' => '4',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Moulvibazar',
-                'country_id' => '4',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Sunamganj',
-                'country_id' => '4',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Sylhet',
-                'country_id' => '4',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Mymensingh',
-                'country_id' => '5',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Netrokona',
-                'country_id' => '5',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Jamalpur',
-                'country_id' => '5',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Sherpur',
-                'country_id' => '5',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Rajshahi',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Natore',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Naogaon',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Sirajganj',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Pabna',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Bogura',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Chapainawabganj',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Joypurhat',
-                'country_id' => '6',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Barisal',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Barguna',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Bhola',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Jhalokati',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Patuakhali',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Pirojpur',
-                'country_id' => '7',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Rangpur',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Dinajpur',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Kurigram',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Nilphamari',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Gaibandha',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Thakurgaon',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Panchagarh',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
             [
                 'name' => 'Lalmonirhat',
-                'country_id' => '8',
+                'country_id' => '1',
             ],
         ];
         foreach ($states as $state) {
