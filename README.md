@@ -1,3 +1,8 @@
+<img src="https://i.imgur.com/VO2ucH7.png">
+
+# Dashboard Overview
+<img src="https://i.imgur.com/4gOEuHE.png">
+
 # Panelix Installer & Dashboard
 
 Panelix is a modern **Laravel 12 Admin Dashboard**. This package provides a simple **installer** to create a new Panelix project on your local machine with minimal setup.
