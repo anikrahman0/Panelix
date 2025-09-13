@@ -76,12 +76,14 @@
                                                         <x-action-buttons.edit
                                                             :url="route('admin.permissions.edit', $group->id)" 
                                                             :isSuper="auth()->guard('admin')->user()->is_super == 1"
+                                                            permission="roles"
                                                         />
                                                         <!-- Example usage in a Blade view -->
                                                         <x-action-buttons.delete
                                                             :url="route('admin.permissions.delete', $group->id)" 
                                                             :isSuper="auth()->guard('admin')->user()->is_super == 1" 
                                                             confirmationMessage="Do you really want to delete this permission?"
+                                                            permission="roles"
                                                         />
                                                     </td>
                                                 </tr>
