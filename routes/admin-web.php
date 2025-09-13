@@ -19,9 +19,6 @@ Route::controller(AdminLoginController::class)->group(function () {
 });
 
 Route::prefix('admin')->middleware(['admin'])->group(function () {
-    Route::controller(AdminNotoficationController::class)->group(function () {
-        Route::get('/admin-notifications/read/{id}', 'readNotification')->name('admin.notifications.read');
-    });
 
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::post('upload-image', [ToolController::class, 'upload'])->name('ckeditor.upload');
