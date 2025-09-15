@@ -2,7 +2,7 @@
 
 # Panelix Installer & Dashboard
 
-Panelix is a modern **Laravel 12 Admin Dashboard**. This package provides a simple **installer** to create a new Panelix project on your local machine with minimal setup.
+Panelix is a modern Laravel 12 Admin Dashboard Starter Kit with a built-in installer. It helps you quickly scaffold a fresh project on your local machine, giving you a ready-to-use admin panel, preconfigured environment, and minimal setup hassle.
 
 ---
 
