@@ -4,6 +4,7 @@
 
 @section('content')
     <div class="container-fluid">
+        @include('layouts.admin.partials.success')
         <div class="card">
             <div class="card-body text-center">
                 <div class="row">
