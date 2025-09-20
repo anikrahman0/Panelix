@@ -77,7 +77,7 @@
 
                                         {{-- <td>{{$state->abbreviation}}</td> --}}
 
-                                        <td>{{$state->country->country_name}}</td>
+                                        <td>{{$state->country?->country_name}}</td>
 
                                         <td>
                                             {{-- <a href="{{ route('admin.states.edit', $state->id) }}">
