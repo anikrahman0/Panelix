@@ -19,15 +19,6 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'admin' => AdminMiddleware::class,
             'check-permission' => CheckPermission::class,
-            'auth.user' => UserMiddleware::class,
-            'email-verified' => IsEmailVerified::class,
-            'check-password-change' => CheckPasswordChange::class
-        ]);
-        $middleware->validateCsrfTokens(except: [
-            'success',
-            'fail',
-            'cancel',
-            'ipn'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
