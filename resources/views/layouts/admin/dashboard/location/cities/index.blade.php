@@ -75,7 +75,7 @@
                                     <tr>
                                         <td>{{$city->name}}</td>
 
-                                        <td>{{$city->state->name}}</td>
+                                        <td>{{$city->state?->name}}</td>
                                         
                                         <td>{{$city->state?->country?->country_name}}</td>
 
