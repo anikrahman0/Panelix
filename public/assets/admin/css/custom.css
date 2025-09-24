@@ -175,7 +175,7 @@ tr.selected {
     position: absolute;
     top: -2px;
     right: 5px;
-    background: #1D1A9B;
+    background: #000;
     border-radius: 50%;
     transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
     transform: scale(0.9) rotate(80deg); ;
@@ -186,7 +186,7 @@ tr.selected {
     transform: scale(1) rotate(180deg);
     opacity: 1;
     background: #ffdad7;
-    color: #1D1A9B;
+    color: #000;
 }
 .permission-common{
     font-size: 13px!important;
@@ -434,12 +434,12 @@ thead.price-stock-head th{
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #1d1a9b;
-    border-color: #1d1a9b;
+    background-color: #000;
+    border-color: #000;
 }
 
 .page-link {
-    color: #1d1a9b;
+    color: #000;
 }
 
 
